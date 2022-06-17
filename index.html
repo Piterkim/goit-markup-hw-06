@@ -423,15 +423,93 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="footer-conect">Подпишитесь на рассылку</p>
+          <div class="subscribe-flex">
+            <div class="subscribe-form-field">
+              <label for="email"
+                ><input
+                  class="subscribe-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </div>
+            <button class="subscribe-button" type="button">
+              Подписаться
+              <svg class="subscribe-svg">
+                <use
+                  href="./images/icons.svg#icon-icon-send"
+                  width="24"
+                  height="24"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" data-modal-close class="modal-button-close">
-          <svg class="button-close-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-cancel-circle"></use>
+        <button class="modal-button-close" data-modal-close type="button">
+          <svg class="modal-svg">
+            <use href="./images/icons.svg#icon-krest"></use>
           </svg>
         </button>
+        <form class="form">
+          <p class="modal-form-titel">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+
+          <label class="form-field">
+            <span class="form-label">Имя</span>
+            <input class="form-input" type="text" name="name" id="name" />
+            <svg class="subscribe-form-div">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+          </label>
+          <label class="form-field" for="tel">
+            <span class="form-label">Телефон</span>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+            <svg class="subscribe-form-div">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Почта</span>
+            <input class="form-input" type="email" name="email" />
+            <svg class="subscribe-form-div">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </label>
+
+          <label class="form-textarea">
+            <span class="form-label">Комментарий</span>
+            <textarea
+              class="textarea-field"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="form-checkbox">
+            <input
+              class="hiden input-checkbox"
+              type="checkbox"
+              name="checkbox"
+            />
+            <span class="checkbox-icon"></span>
+            <span class="form-checkbox-title"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="form-checkbox__link" href="">Условия договора</a></span
+            >
+          </label>
+          <button class="button primary button-modal" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
