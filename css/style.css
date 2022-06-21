@@ -872,6 +872,7 @@ border-radius: 4px;
   height: 16px;
 }
 .checkbox-icon {
+  background-color: #7467da;
   width: 16px;
   height: 15px;
   display: inline-block;
@@ -879,8 +880,9 @@ border-radius: 4px;
   border-radius: 2px;
   transition: background-image 250ms var(--timing);
 }
+
 .input-checkbox:checked + .checkbox-icon {
-  background-color: var(--accent-text-color);
+  /*background-color: var(--accent-text-color);*/
   background-image: url(../images/iconscheck.svg);
   background-size: contain;
   border-color: transparent;
