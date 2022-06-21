@@ -882,7 +882,7 @@ border-radius: 4px;
 }
 
 .input-checkbox:checked + .checkbox-icon {
-  /*background-color: var(--accent-text-color);*/
+  background-color: var(--hover-bg-prbutton);
   background-image: url(../images/iconscheck.svg);
   background-size: contain;
   border-color: transparent;
