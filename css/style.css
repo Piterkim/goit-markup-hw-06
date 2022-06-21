@@ -880,7 +880,7 @@ border-radius: 4px;
   height: 16px;
 }
 .checkbox-icon {
-  background-color: (--title-text-color);
+  /*background-color: var(--title-text-color);*/
   width: 16px;
   height: 15px;
   display: inline-block;
